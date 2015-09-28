@@ -1,0 +1,40 @@
+.jimu-widget-d3DirectionalFlow{
+  margin: -14px -14px 10px -14px;
+  padding: 14px;
+}
+
+.jimu-widget-d3DirectionalFlow .dijitArrowButtonContainer{
+  width: 30px;
+}
+
+.jimu-widget-d3DirectionalFlow .jimu-btn{
+  float: none;
+  margin: auto;
+  width: 150px;
+}
+
+/*#forceFlowChartSVG {
+    display:block; 
+    width: 50vw;
+    height: 74vh;
+    margin: auto;
+}*/
+
+/*ADDED FROM MAIN.CSS*/
+.node {
+  cursor: pointer;
+}
+ 
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+}
+
+.node text { font: 12px sans-serif; }
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}

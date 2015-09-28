@@ -1,0 +1,179 @@
+{
+  "directionalFlowLayers":[
+    {
+      "label": "FIByDetail",
+      "id": "FIByDetail_4484",
+      "url":"http://ebrlawenf.esri.com:6080/arcgis/rest/services/D3/FIByDetail/FeatureServer/0",
+      "queryField": "DetailPlat", 
+      "fields":["*"],
+      "title":"${Name}",
+      "content": "<b>Alias: </b>${Alias}<br/><br/>",    
+      "query": "1=1",
+      "selectFeaturesField": "Name", 
+      "linkLegendField": "FIContext1",
+      "opacityField": "Name",
+      "uniqueValueRender":{
+        "type": "uniqueValue",
+        "field1": "FIContext1",
+        "defaultSymbol": {
+          "color": [0, 0, 0, 64],
+          "outline": {
+            "color": [0, 0, 0, 255],
+            "width": 0,
+            "type": "esriSLS",
+            "style": "esriSLSNull"
+          },
+          "type": "esriSMS",
+          "style": "esriSMSCircle"
+        },
+        "uniqueValueInfos": [{
+          "value": "BURGLARY",
+          "symbol": {
+            "color": [31, 119, 180],
+            "outline": {
+              "color": [31, 119, 180],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "DRUGS",
+          "symbol": {
+            "color": [174, 199, 232],
+            "outline": {
+              "color": [174, 199, 232],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "ROBBERY",
+          "symbol": {
+            "color": [255, 127, 14],
+            "outline": {
+              "color": [255, 127, 14],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "ARSON",
+          "symbol": {
+            "color": [44, 160, 44],
+            "outline": {
+              "color": [44, 160, 44],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "FORGERY/FRAUD",
+          "symbol": {
+            "color": [152, 223, 138],
+            "outline": {
+              "color": [152, 223, 138],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "WEAPONS",
+          "symbol": {
+            "color": [214, 39, 40],
+            "outline": {
+              "color": [214, 39, 40],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "PROSTITUTION",
+          "symbol": {
+            "color": [55, 152, 150],
+            "outline": {
+              "color": [55, 152, 150],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }, {
+          "value": "GANG",
+          "symbol": {
+            "color": [140, 86, 75],
+            "outline": {
+              "color": [140, 86, 75],
+              "width": 0,
+              "type": "esriSLS",
+              "style": "esriSLSNull"
+            },
+            "type": "esriSMS",
+            "style": "esriSMSCircle"
+          }
+        }]
+    }, 
+      "rendererSymbol": {
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "color": [34, 200, 128],
+        "size": 12,
+        "outline": {
+          "color": [247, 34, 101],
+          "width": 0,
+          "style": "esriSLSNull"
+        }
+      },
+      "selectionSymbol": {
+        "type": "esriSMS",
+        "style": "esriSMSCircle",
+        "color": [34, 200, 128],
+        "size": 12,
+        "outline": {
+          "color": [247, 34, 101],
+          "width": 3,
+          "style": "esriSLSSolid"
+        }
+      },
+      "linkInfo": [{
+        "targetField": "Name",
+        "sourceField": "FID_DetailArea",
+        "groupField": "FIContext1"
+      },
+      {
+        "targetField": "Alias",
+        "sourceField": "Name",
+        "groupString": "ALIAS"
+      }]
+    },
+    {
+      "label": "Detail Areas",
+      "id": "DetailArea4FIs_2997", 
+      "url":"http://ebrlawenf.esri.com:6080/arcgis/rest/services/D3/DetailArea4FIs/FeatureServer/0",
+      "fields":["*"],
+      "title":"Detail Area: ${DetailID}",
+      "content": "<b>What goes here?<br/><br/>",   
+      "query": "",
+      "selectFeaturesField": "DetailID"
+    }
+  ]
+}
